@@ -18,7 +18,7 @@ class graveness(Page):
             result_sequence.append(random.choice([0, 1]))
         self.participant.vars['result_sequence'] = result_sequence
 
-        print(self.participant.vars['dynamic_rounds'])
+        print('sequence of dynamic_self')
         print(self.participant.vars['sequence'])
         print(self.participant.vars['result_sequence'])
 

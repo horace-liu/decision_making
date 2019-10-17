@@ -6,17 +6,15 @@
 {% endblock %}
 
 {% block content %}
-<hr>
-<p>接下来的问题有所变化，请您仔细阅读题干要求再作答！您的认真回答对本研究非常重要！</p>
-<br>
-{% formfield player.vt_check %}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-{% next_button %}
+    <hr>
+    <br>
+    <p>接下来的<b>问题有所变化</b>，请您<b>仔细阅读题干要求</b>再作答！您的认真回答对本研究非常重要！</p>
+    {% formfield player.vt_check %}
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
 
 {% endblock %}
 

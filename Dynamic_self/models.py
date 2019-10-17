@@ -22,7 +22,7 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 32
 
-    result_content = ['您的个人账户没有收益', '您的个人账户增加￥5']
+    result_content = ['您的个人账户<b>没有收益</b>', '您的个人账户<b>增加￥5</b>']
     result_pic = ['dynamic/loss.png', 'dynamic/win.png']
 
 
@@ -36,7 +36,7 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     agreement = models.IntegerField(
-        label='我已充分阅读上述游戏规则，同意继续实验。',
+        label='我已充分阅读上述游戏规则，同意继续实验',
         choices=[[1, '是'], [0, '否']],
         widget=widgets.RadioSelectHorizontal
     )

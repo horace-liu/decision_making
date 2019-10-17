@@ -6,51 +6,68 @@
 {% endblock %}
 
 {% block content %}
-<hr>
-<p>下列是两名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，他们认为自己在第5轮拿到5元的可能性各为多少？【0:不可能   100:必然】 </p>
-<hr>
-<br>
-<div align="center">
-    <img src="{% static 'vo_tom/P1_Vo1.png' %}" />
-</div>
-<br>
-<div align="center">
-<div class="input-group" >
-    <div class="input-group-prepend">
-        <span class="input-group-text">不可能</span>
+    <hr>
+    <p>下列是两名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，请您推测<b><u>他们认为自己</u></b>在第5轮拿到5元的可能性各为多少？【0:不可能 100:必然】 </p>
+    <hr>
+    <br>
+    <div align="center">
+        <img src="{% static 'vo_tom/P1_Vo1.png' %}"/>
+    </div>
+    <br>
+    <div align="center">
+        <div class="form-group required">
+            <div class="controls  field-rule_obtain">
+                <div class="input-group slider" data-slider="">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">0</span>
+                    </div>
+                    <input type="range" name="tom1_b1" value="None" required="" id="id_rule_obtain"
+                           class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">100</span>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <input type="range" name="tom1_b1" min="1" max="100" step="1" class="form-control">
-
-    <div class="input-group-append">
-        <span class="input-group-text">必然</span>
+    <hr>
+    <br>
+    <div align="center">
+        <img src="{% static 'vo_tom/P1_Vo2.png' %}"/>
     </div>
-</div>
-</div>
+    <br>
+    <div align="center">
+        <div class="form-group required">
+            <div class="controls  field-rule_obtain">
+                <div class="input-group slider" data-slider="">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">0</span>
+                    </div>
+                    <input type="range" name="tom1_b2" value="None" required="" id="id_rule_obtain"
+                           class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">100</span>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
+                    </div>
 
-<hr>
-<br>
-<div align="center">
-    <img src="{% static 'vo_tom/P1_Vo2.png' %}" />
-</div>
-<br>
-<div align="center">
-<div class="input-group" >
-    <div class="input-group-prepend">
-        <span class="input-group-text">不可能</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <input type="range" name="tom1_b2" min="1" max="100" step="1" class="form-control">
-
-    <div class="input-group-append">
-        <span class="input-group-text">必然</span>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+        {% next_button %}
     </div>
-</div>
-</div>
-
-<hr>
-<br>
-<div align="center">
-    {% next_button %}
-</div>
 {% endblock %}

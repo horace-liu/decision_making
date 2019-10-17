@@ -8,15 +8,18 @@
 {% block content %}
     <hr>
     <div align="center">
-    <h3>第 {{ player.round_number }} 回合</h3>
-    <p>请您选择是否向高尔顿盒中投入硬币</p>
-    <img src="{% static 'dynamic/box.png' %}" />
-    {% formfield player.choice %}
-    <br>
-    <br>
-    <br>
-    <br>
-    {% next_button %}
+        <br>
+        <h3>第 {{ player.round_number }} 回合</h3>
+        <br>
+        <p>请您选择是否向高尔顿盒中投入硬币</p>
+        <div><img src="{% static 'dynamic/box.png' %}" width="30%" height="30%"/></div>
+        <br>
+        {% formfield player.choice %}
+        <br>
+        <br>
+        <br>
+        <br>
+        {% next_button %}
     </div>
 
 {% endblock %}
