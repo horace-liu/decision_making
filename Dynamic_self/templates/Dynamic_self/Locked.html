@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <div align="center">
+    <h3>第 {{ player.round_number }} 回合</h3>
+    <p>本回合已被系统选中，将直接投币</p>
+    <p>请问您认为自己本回合获得￥5的可能性有多大？</p>
+    <div class="input-group" >
+    <div class="input-group-prepend">
+        <span class="input-group-text">0</span>
+    </div>
+
+    <input type="range" name="possibility" min="1" max="100" step="1" class="form-control">
+
+    <div class="input-group-append">
+        <span class="input-group-text">100</span>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+    </div>
+
+{% endblock %}

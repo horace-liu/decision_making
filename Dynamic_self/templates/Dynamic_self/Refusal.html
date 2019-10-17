@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <div align="center">
+    <h3>第 {{ player.round_number }} 回合</h3>
+    <p>本回合您拒绝投币，您的收益按照一定规则计算：</p>
+    <img src="{% static 'dynamic/rule.png' %}" />
+    <p>您的个人账户<b>增加￥4.5</b></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+    </div>
+
+{% endblock %}

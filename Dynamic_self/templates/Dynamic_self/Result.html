@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <div align="center">
+    <h3>第 {{ player.round_number }} 回合</h3>
+    <p>本回合，您投币的结果是：</p>
+    <img src="{% static pic_link %}" />
+    <br>
+    <p>{{ result_content }}</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+    </div>
+
+{% endblock %}

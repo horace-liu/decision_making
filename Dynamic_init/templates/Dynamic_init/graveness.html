@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+<hr>
+<p>我明白上述问题均要求我推测<b>参与者</b>是怎么想的，而不是我是怎么想的</p>
+<br>
+{% formfield player.graveness %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% next_button %}
+
+{% endblock %}
+

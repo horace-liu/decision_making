@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <div align="center">
+    <h3>第 {{ player.round_number }} 回合</h3>
+    <p>请您选择是否向高尔顿盒中投入硬币</p>
+    <img src="{% static 'dynamic/box.png' %}" />
+    {% formfield player.choice %}
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+    </div>
+
+{% endblock %}
