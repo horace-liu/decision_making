@@ -19,11 +19,6 @@ class S_tom3(Page):
     form_fields = ['tom3_p{}'.format(i) for i in [1, 2, 3]]
 
 
-class graveness(Page):
-    form_model = 'player'
-    form_fields = ['graveness']
-
-
 tom_sequence = [S_tom1, S_tom2, S_tom3]
 random.shuffle(tom_sequence)
-page_sequence = tom_sequence + [graveness]
+page_sequence = tom_sequence

@@ -41,6 +41,4 @@ class Player(BasePlayer):
     tom2_m1 = models.IntegerField(label='')
     tom2_m2 = models.IntegerField(label='')
 
-    # understand & agreement
-    graveness = models.BooleanField(label='我明白上述问题均要求我推测参与者是怎么想的，而不是我怎么想的', choices=[[1, '是'], [0, '否']],
-                                    widget=widgets.RadioSelectHorizontal)
+
