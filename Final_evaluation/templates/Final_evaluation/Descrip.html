@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <p>以下是关于该参与者（林*）特征的描述，请您评定赞同程度（0-非常不同意 7-非常同意）</p>
+    <br>
+    {% formfields %}
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+
+{% endblock %}
+

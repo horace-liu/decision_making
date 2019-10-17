@@ -26,12 +26,6 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    # demographic data.
-    name = models.StringField()
-    gender = models.IntegerField()
-    age = models.IntegerField()
-    education = models.StringField()
-
     # consent.
     consent = models.IntegerField(label='', choices=[[1, '同意'], [0, '不同意']], widget=widgets.RadioSelectHorizontal)
 

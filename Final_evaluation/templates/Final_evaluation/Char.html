@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <p>以上是这名参与者的所有数据</p>
+    <p>请您评价这名参与者与以下几个维度的符合程度？（0-完全不符合 7-完全符合）</p>
+    <br>
+    {% formfields %}
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+
+{% endblock %}

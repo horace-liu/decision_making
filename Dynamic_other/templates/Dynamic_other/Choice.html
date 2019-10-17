@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+<div align="center">
+    <hr>
+    <p>本回合该参与者的选择是：{{ choice }}</p>
+    <br>
+    <div>
+        <img src="{% static pic_dir %}"
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% next_button %}
+</div>
+
+{% endblock %}
