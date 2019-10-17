@@ -1,0 +1,76 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    行为决策实验
+{% endblock %}
+
+{% block content %}
+<hr>
+<p>下列是三名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，您认为他们在第5轮拿到5元的可能性各为多少？【0:不可能   100:必然】 </p>
+<hr>
+<br>
+<div align="center">
+    <img src="{% static 'vo_tom/P2_Vo1.png' %}" />
+</div>
+<br>
+<div align="center">
+<div class="input-group" >
+    <div class="input-group-prepend">
+        <span class="input-group-text">不可能</span>
+    </div>
+
+    <input type="range" name="vo3_p1" min="1" max="100" step="1" class="form-control">
+
+    <div class="input-group-append">
+        <span class="input-group-text">必然</span>
+    </div>
+</div>
+</div>
+
+<hr>
+<br>
+<div align="center">
+    <img src="{% static 'vo_tom/P2_Vo2.png' %}" />
+</div>
+<br>
+<div align="center">
+<div class="input-group" >
+    <div class="input-group-prepend">
+        <span class="input-group-text">不可能</span>
+    </div>
+
+    <input type="range" name="vo3_p2" min="1" max="100" step="1" class="form-control">
+
+    <div class="input-group-append">
+        <span class="input-group-text">必然</span>
+    </div>
+</div>
+</div>
+
+<hr>
+<br>
+<div align="center">
+    <img src="{% static 'vo_tom/P2_Vo3.png' %}" />
+</div>
+<br>
+<div align="center">
+<div class="input-group" >
+    <div class="input-group-prepend">
+        <span class="input-group-text">不可能</span>
+    </div>
+
+    <input type="range" name="vo3_p3" min="1" max="100" step="1" class="form-control">
+
+    <div class="input-group-append">
+        <span class="input-group-text">必然</span>
+    </div>
+</div>
+</div>
+
+<hr>
+<br>
+<div align="center">
+    {% next_button %}
+</div>
+{% endblock %}

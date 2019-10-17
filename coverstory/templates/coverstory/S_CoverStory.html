@@ -1,0 +1,35 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验——指导语
+{% endblock %}
+
+{% block content %}
+<p>请您仔细阅读以下指导语：</p>
+<p>在一项决策游戏实验中，参与者将进行5回合游戏，在前4个回合中参与者可以选择是否向高尔顿盒中投入硬币（装置如图，硬币投入区能保证硬币从中央落入，下方绿、蓝两空间体积相等）： </p>
+<p>（1）若选择投币，落入绿色区域则获得￥5，落入蓝色区域则没有收益； </p>
+<p>（2）若拒绝投币，则直接获得￥2.5。  第5回合参与者必须投币，每回合参与者均能得知该回合的实际收益，最终参与者获得的收益即为实验参与的报酬。</p>
+<div align="center"><img src="{% static 'coverstory\GED.gif' %}" /></div>
+<br>
+<p>研究记录每位实验参与者每回合的选择和实际收益，例如一位参与者的数据如下表1所示（单位省略），可知：该参与者第1、3、4回合选择了投币，第1和4回合没有拿到收益，而第3回合拿到了收益；第2回合拒绝进入，因此获得一半的收益；第5回合必须投币，且该参与者拿到收益。 </p>
+<div align="center"><img src="{% static 'coverstory\P1_1.png' %}" /></div>
+<br>
+<p>接下来您将看到两位参与者的部分数据，请您结合自己的理解和下表中的部分数据判断下列陈述是否正确：  </p>
+<div align="center"><img src="{% static 'coverstory\P1_2.png' %}" /></div>
+<hr>
+<br>
+<div align="center">
+{% formfield player.check_q1 %}
+    <br>
+{% formfield player.check_q2 %}
+    <br>
+{% formfield player.check_q3 %}
+    <hr>
+    <br>
+        {% next_button %}
+</div>
+
+
+{% endblock %}
+
