@@ -52,3 +52,4 @@ class Player(BasePlayer):
     refusal = models.StringField(initial='locked')
     final_benefit = models.FloatField()
     possibility = models.IntegerField(label='')
+    rule_obtain = models.IntegerField(label='')

@@ -39,7 +39,7 @@ ROOMS = [
     dict(
         name='formal_exp_room',
         display_name='A exp-room for a SPLENDID EXP',
-        participant_label_file='_rooms/participants.txt',
+        participant_label_file='_room/participants.txt',
         use_secure_urls=True
     )
 ]
@@ -54,8 +54,3 @@ SECRET_KEY = '!o8lkg!nuoth*^%(ujm)4th2w@rsni!cm@+(x=je%_e(6#6&3h'
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
 INSTALLED_APPS = ['otree']
-
-if environ.get('OTREE_PRODUCTION') not in {None, '', '0'}:
-    DEBUG = True
-else:
-    DEBUG = False

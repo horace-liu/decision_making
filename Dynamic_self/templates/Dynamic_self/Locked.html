@@ -8,11 +8,32 @@
 {% block content %}
     <hr>
     <div align="center">
-    <br>
+        <br>
         <h3>第 {{ player.round_number }} 回合</h3>
         <br>
         <p>本回合已被系统选中，将直接投币</p>
         <p>请问您认为自己本回合获得￥5的可能性有多大？</p>
+        <br>
+        <div class="form-group required">
+            <div class="controls  field-rule_obtain">
+                <div class="input-group slider" data-slider="">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">0</span>
+                    </div>
+                    <input type="range" name="possibility" value="None" required="" id="id_rule_obtain"
+                           class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">100</span>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>请问您认为您在多大程度上掌握了拒绝投币情况下收益生效的规则？</p>
         <br>
         <div class="form-group required">
             <div class="controls  field-rule_obtain">
