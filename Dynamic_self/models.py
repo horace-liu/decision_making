@@ -22,7 +22,7 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 32
 
-    result_content = ['您的个人账户<b>没有收益</b>', '您的个人账户<b>增加￥5</b>']
+    result_content = ['没有收益', '增加￥5']
     result_pic = ['dynamic/loss.png', 'dynamic/win.png']
 
 

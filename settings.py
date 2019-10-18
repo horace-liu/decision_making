@@ -22,7 +22,7 @@ SESSION_CONFIGS = [
        'name': 'GXX',
        'display_name': "GXX's Splendid Experiment ",
        'num_demo_participants': 6,
-       'app_sequence': ['coverstory', 'StaticVo', 'StaticTom', 'Dynamic_init', 'Dynamic_self', 'Dynamic_other', 'Final_evaluation', 'Demographical', 'Theend']
+       'app_sequence': ['coverstory', 'StaticVo', 'StaticTom', 'Dynamic_init', 'Dynamic_self',  'Dynamic_other', 'Final_evaluation', 'Demographical', 'Theend']
     },
 ]
 
@@ -35,7 +35,14 @@ LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
-ROOMS = []
+ROOMS = [
+    dict(
+        name='formal_exp_room',
+        display_name='A exp-room for a SPLENDID EXP',
+        participant_label_file='_rooms/participants.txt',
+        use_secure_urls=True
+    )
+]
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
@@ -47,3 +54,8 @@ SECRET_KEY = '!o8lkg!nuoth*^%(ujm)4th2w@rsni!cm@+(x=je%_e(6#6&3h'
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
 INSTALLED_APPS = ['otree']
+
+if environ.get('OTREE_PRODUCTION') not in {None, '', '0'}:
+    DEBUG = True
+else:
+    DEBUG = False
