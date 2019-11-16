@@ -33,12 +33,12 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     # TOM.
-    tom1_b1 = models.IntegerField(label='')
-    tom1_b2 = models.IntegerField(label='')
-    tom3_p1 = models.IntegerField(label='')
-    tom3_p2 = models.IntegerField(label='')
-    tom3_p3 = models.IntegerField(label='')
-    tom2_m1 = models.IntegerField(label='')
-    tom2_m2 = models.IntegerField(label='')
-
-
+    tom1_b1 = models.IntegerField(label='', min=0, max=100)
+    tom1_b2 = models.IntegerField(label='', min=0, max=100)
+    tom1_b3 = models.IntegerField(label='', min=0, max=100)
+    tom3_p1 = models.IntegerField(label='', min=0, max=100)
+    tom3_p2 = models.IntegerField(label='', min=0, max=100)
+    tom3_p3 = models.IntegerField(label='', min=0, max=100)
+    tom2_m1 = models.IntegerField(label='', min=0, max=100)
+    tom2_m2 = models.IntegerField(label='', min=0, max=100)
+    tom2_m3 = models.IntegerField(label='', min=0, max=100)

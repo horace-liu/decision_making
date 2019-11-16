@@ -15,27 +15,7 @@
     </div>
     <br>
 
-    <div align="center">
-        <div class="form-group required">
-            <div class="controls  field-rule_obtain">
-                <div class="input-group slider" data-slider="">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">0</span>
-                    </div>
-                    <input type="range" name="vo1_b1" value="None" required="" id="id_rule_obtain"
-                           class="form-control">
-                    <div class="input-group-append">
-                        <span class="input-group-text">100</span>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
+    {{ formfield player.vo1_b1 }}
 
     <hr>
     <br>
@@ -43,32 +23,16 @@
         <img src="{% static 'vo_tom/P1_Vo2.png' %}"/>
     </div>
     <br>
-    <div align="center">
-        <div class="form-group required">
-            <div class="controls  field-rule_obtain">
-                <div class="input-group slider" data-slider="">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">0</span>
-                    </div>
-                    <input type="range" name="vo1_b2" value="None" required="" id="id_rule_obtain"
-                           class="form-control">
-                    <div class="input-group-append">
-                        <span class="input-group-text">100</span>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
+    {{ formfield player.vo1_b2 }}
 
     <hr>
     <br>
     <br>
     <br>
     <br>
+
+
     <div align="center">
         {% next_button %}
     </div>

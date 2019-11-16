@@ -32,12 +32,14 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    vo1_b1 = models.IntegerField(label='')
-    vo1_b2 = models.IntegerField(label='')
-    vo3_p1 = models.IntegerField(label='')
-    vo3_p2 = models.IntegerField(label='')
-    vo3_p3 = models.IntegerField(label='')
-    vo2_m1 = models.IntegerField(label='')
-    vo2_m2 = models.IntegerField(label='')
+    vo1_b1 = models.IntegerField(label='', min=0, max=100)
+    vo1_b2 = models.IntegerField(label='', min=0, max=100)
+    vo1_b3 = models.IntegerField(label='', min=0, max=100)
+    vo3_p1 = models.IntegerField(label='', min=0, max=100)
+    vo3_p2 = models.IntegerField(label='', min=0, max=100)
+    vo3_p3 = models.IntegerField(label='', min=0, max=100)
+    vo2_m1 = models.IntegerField(label='', min=0, max=100)
+    vo2_m2 = models.IntegerField(label='', min=0, max=100)
+    vo2_m3 = models.IntegerField(label='', min=0, max=100)
 
     vt_check = models.BooleanField(label='', choices=[[1, '我明白上述问题均要求我推测*参与者是怎么想的*，而不是我是怎么想的']], widget=widgets.RadioSelectHorizontal)

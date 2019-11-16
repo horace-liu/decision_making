@@ -36,7 +36,7 @@ class Choice(Page):
 
 class Locked(Page):
     form_model = 'player'
-    form_fields = ['possibility']
+    form_fields = ['possibility','rule_prob']
 
     def is_displayed(self):
         sequence = self.participant.vars['sequence']

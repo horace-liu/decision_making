@@ -38,7 +38,7 @@ class Choice(Page):
 
 class Evaluation(Page):
     form_model = 'player'
-    form_fields = ['tom_benefit_exp', 'rule_obtain', 'benefit_poss']
+    form_fields = ['tom_bene_prob', 'rule_prob', 'bene_prob']
 
     def is_displayed(self):
         return self.session.vars['sequence'][self.round_number - 1] == 1
