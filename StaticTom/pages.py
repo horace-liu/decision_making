@@ -6,12 +6,12 @@ import random
 
 class S_tom1(Page):
     form_model = 'player'
-    form_fields = ['tom1_b{}'.format(i) for i in [1, 2]]
+    form_fields = ['tom1_b{}'.format(i) for i in [1, 2, 3]]
 
 
 class S_tom2(Page):
     form_model = 'player'
-    form_fields = ['tom2_m{}'.format(i) for i in [1, 2]]
+    form_fields = ['tom2_m{}'.format(i) for i in [1, 2, 3]]
 
 
 class S_tom3(Page):

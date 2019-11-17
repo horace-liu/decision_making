@@ -42,4 +42,4 @@ class Player(BasePlayer):
     vo2_m2 = models.IntegerField(label='', min=0, max=100)
     vo2_m3 = models.IntegerField(label='', min=0, max=100)
 
-    vt_check = models.BooleanField(label='', choices=[[1, '我明白上述问题均要求我推测*参与者是怎么想的*，而不是我是怎么想的']], widget=widgets.RadioSelectHorizontal)
+    vt_check = models.BooleanField(label='', choices=[[1, '我明白接下来的问题均要求我推测**参与者是怎么想的**，而不是我是怎么想的']], widget=widgets.RadioSelectHorizontal)

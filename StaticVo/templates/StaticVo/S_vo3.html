@@ -7,23 +7,25 @@
 
 {% block content %}
     <hr>
-    <p>下列是三名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，<b><u>您认为他们</u></b>在第5轮拿到5元的可能性为多少？【用0-100的任意数字表示，0表示完全不可能；100表示必然会拿到；数字越大表明可能性越大】 </p>
+    <p>下列是三名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，<b><u>您认为他们</u></b>在第5轮拿到5元的可能性为多少？【用0-100的任意整数表示，0表示完全不可能；100表示必然会拿到；数字越大表明可能性越大】 </p>
     <hr>
     <br>
+<div align="center">
+<div align="center">
     <div align="center">
         <img src="{% static 'vo_tom/P2_Vo1.png' %}"/>
     </div>
     <br>
-
-   {{ formfield player.vo3_p1 }}
+    <p>可能性为：</p>
+   {% formfield player.vo3_p1 %}
     <hr>
     <br>
     <div align="center">
         <img src="{% static 'vo_tom/P2_Vo2.png' %}"/>
     </div>
     <br>
-
-   {{ formfield player.vo3_p2 }}
+    <p>可能性为：</p>
+   {% formfield player.vo3_p2 %}
 
     <hr>
     <br>
@@ -31,8 +33,11 @@
         <img src="{% static 'vo_tom/P2_Vo3.png' %}"/>
     </div>
     <br>
+    <p>可能性为：</p>
+    {% formfield player.vo3_p3 %}
 
-    {{ formfield player.vo3_p3 }}
+</div>
+</div>
     <hr>
     <br>
     <br>
