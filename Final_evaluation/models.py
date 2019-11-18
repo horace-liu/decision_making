@@ -46,6 +46,9 @@ class Player(BasePlayer):
             widget=widgets.RadioSelectHorizontal
         )
 
+
+
+
     char1 = make_field_char('明智')
     char2 = make_field_char('冲动')
     char3 = make_field_char('冷静')
@@ -60,6 +63,5 @@ class Player(BasePlayer):
     descrip4 = make_field_des('林*几乎不敢期望事情会照着自己的意愿变化')
     descrip5 = make_field_des('林*很少指望好事会发生在自己身上')
     descrip6 = make_field_des('总的来说，林*希望有更多好事儿，而非坏事儿发生在自己身上')
-
 
 
