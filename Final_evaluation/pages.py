@@ -10,6 +10,8 @@ class Char(Page):
 
 class Descrip(Page):
     form_model = 'player'
-    form_fields = ['descrip{}'.format(i) for i in range(1, 11)]
+    form_fields = ['descrip{}'.format(i) for i in range(1, 7)]
+
+
 
 page_sequence = [Char, Descrip]

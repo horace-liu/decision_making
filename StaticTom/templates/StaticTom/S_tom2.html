@@ -7,33 +7,16 @@
 
 {% block content %}
     <hr>
-    <p>下列是两名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，请您推测<b><u>他们认为自己</u></b>在第5轮拿到5元的可能性各为多少？【0:不可能 100:必然】 </p>
+    <p>下列是三名参与者的前4回合部分数据，按规则第5轮必须投币。结合已提供的信息，请您推测<b><u>他们认为自己</u></b>在第5轮拿到5元的可能性为多少？【用0-100的任意整数表示，0表示完全不可能；100表示必然会拿到；数字越大表明可能性越大】 </p>
     <hr>
     <br>
+<div align="center">
     <div align="center">
         <img src="{% static 'vo_tom/P3_Vo1.png' %}"/>
     </div>
     <br>
-    <div align="center">
-        <div class="form-group required">
-            <div class="controls  field-rule_obtain">
-                <div class="input-group slider" data-slider="">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">0</span>
-                    </div>
-                    <input type="range" name="tom2_m1" value="None" required="" id="id_rule_obtain"
-                           class="form-control">
-                    <div class="input-group-append">
-                        <span class="input-group-text">100</span>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <p>您推测TA认为可能性为</p>
+    {% formfield player.tom2_m1 %}
 
     <hr>
     <br>
@@ -41,27 +24,22 @@
         <img src="{% static 'vo_tom/P3_Vo2.png' %}"/>
     </div>
     <br>
+    <p>您推测TA认为可能性为</p>
+    {% formfield player.tom2_m2 %}
+
+    <hr>
+    <br>
     <div align="center">
-        <div class="form-group required">
-            <div class="controls  field-rule_obtain">
-                <div class="input-group slider" data-slider="">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">0</span>
-                    </div>
-                    <input type="range" name="tom2_m2" value="None" required="" id="id_rule_obtain"
-                           class="form-control">
-                    <div class="input-group-append">
-                        <span class="input-group-text">100</span>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text" data-slider-value="" title="current value">50</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <img src="{% static 'vo_tom/P3_Vo3.png' %}"/>
     </div>
+    <br>
+    <p>您推测TA认为可能性为</p>
+    {% formfield player.tom2_m3 %}
 
+
+
+
+</div>
     <hr>
     <br>
     <br>

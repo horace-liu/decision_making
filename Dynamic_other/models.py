@@ -34,9 +34,9 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    tom_benefit_exp = models.IntegerField(label='', widget=widgets.Slider)
-    rule_obtain = models.IntegerField(label='', widget=widgets.Slider)
-    benefit_poss = models.IntegerField(label='', widget=widgets.Slider)
+    tom_bene_prob = models.IntegerField(label='',min=0,max=100)
+    rule_prob = models.IntegerField(label='',min=0,max=100)
+    bene_prob = models.IntegerField(label='',min=0,max=100)
 
 
 
