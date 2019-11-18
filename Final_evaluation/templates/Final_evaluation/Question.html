@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    决策行为实验
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <br>
+    <div align="center">
+        <br>
+        <br>
+        <p>请问您对实验进程是否有什么意见和建议？<br>或者您可否谈一谈完成实验任务时觉得奇怪与感到困惑的地方？</p>
+
+        {% formfield player.question %}
+        <br>
+        <br>
+        <br>
+        <br>
+
+        {% next_button %}
+    </div>
+{% endblock %}
+
