@@ -22,7 +22,7 @@ SESSION_CONFIGS = [
        'name': 'GXX',
        'display_name': "GXX's Splendid Experiment ",
        'num_demo_participants': 6,
-       'app_sequence': ['Dynamic_self', 'coverstory', 'StaticVo', 'StaticTom', 'Dynamic_other', 'Final_evaluation', 'Demographical', 'Theend']
+       'app_sequence': ['coverstory', 'StaticVo', 'StaticTom', 'Dynamic_self', 'Dynamic_other', 'Final_evaluation', 'Demographical', 'Theend']
     },
 ]
 
