@@ -12,6 +12,8 @@ class Descrip(Page):
     form_model = 'player'
     form_fields = ['descrip{}'.format(i) for i in range(1, 7)]
 
+class Question(Page):
+    form_model = 'player'
+    form_fields = ['question']
 
-
-page_sequence = [Char, Descrip]
+page_sequence = [Char, Descrip, Question]
