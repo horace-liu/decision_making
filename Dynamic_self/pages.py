@@ -35,9 +35,9 @@ class Introduction(Page):
 
         self.session.vars['result_sequence'] = result_sequence
 
-        print('sequence of dynamic_self')
-        print("lock sequence:\t\t", self.session.vars['sequence'])
-        print("result sequence:\t", self.session.vars['result_sequence'])
+        # print('sequence of dynamic_self')
+        # print("lock sequence:\t\t", self.session.vars['sequence'])
+        # print("result sequence:\t", self.session.vars['result_sequence'])
 
 class Choice(Page):
     form_model = 'player'
