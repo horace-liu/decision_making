@@ -18,9 +18,9 @@ class Introduction(Page):
         self.session.vars['sequence'] = sequence
         self.session.vars['choice_sequence'] = choice_sequence
 
-        print('sequence of dynamic_other:')
-        print(self.session.vars['sequence'])
-        print(self.session.vars['choice_sequence'])
+        # print('sequence of dynamic_other:')
+        # print(self.session.vars['sequence'])
+        # print(self.session.vars['choice_sequence'])
 
 
 class Choice(Page):

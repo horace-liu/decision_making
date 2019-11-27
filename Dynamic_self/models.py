@@ -36,7 +36,7 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     agreement = models.IntegerField(
-        label='我已充分阅读上述游戏规则，同意继续实验',
+        label='我已充分阅读上述游戏规则，理解到了本次游戏与上次任务的差异，同意继续实验',
         choices=[[1, '是'], [0, '否']],
         widget=widgets.RadioSelectHorizontal
     )
